@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card-head">
+      <h1>My Tasks</h1>
+      <p id="count" class="count">Nothing on your list yet</p>
+      <div class="progress" id="progress" role="progressbar" aria-label="Tasks completed" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="bar"></div>
+      </div>
+    </header>
+
+    <section class="card-body">
+      <div class="add-row">
+        <input id="taskInput" type="text" placeholder="Write a new task..." maxlength="100" aria-label="New task">
+        <button id="addBtn">Add task</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <p id="empty" class="empty">No tasks yet. Add one above.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
